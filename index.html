@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Focus Timer 2.0</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./src/main.js" defer></script>
+</head>
+<body>
+    
+        <main>
+            <div id="app">
+                <section id="timer" class="flex">
+                       <div class="relogio">
+                            <span id="minutes">15</span>
+                            <span>:</span>
+                            <span id="seconds">00</span>
+                        </div> 
+            
+                <div id="controls" class="flex">
+                    <button data-action = "toggleRunning" class="ph ph-play-circle"></button>
+                    <button data-action = "toggleRunning" class="ph ph-pause-circle"></button>
+                    <button data-action = "stop" class="ph ph-stop-circle"></button>
+                    <button data-action = "toAdd" class="ph ph-plus-circle"></button>
+                    <button data-action= "toRemove" class="ph ph-minus-circle"></button>
+                </div>
+                </section>
+
+                <section id="sons" class="flex">
+                    <button data-action = "toggleMusic1" class="ph ph-tree"></button>
+                    <button  data-action = "toggleMusic2" class="ph ph-cloud-rain"></button>
+                    <button data-action = "toggleMusic3" class="ph ph-warehouse"></button>
+                    <button  data-action = "toggleMusic4" class="ph ph-flame"></button>
+                </section>
+            
+            </div>
+
+        </main>
+    </body>
+</html>
